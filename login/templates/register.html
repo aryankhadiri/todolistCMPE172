@@ -1,0 +1,14 @@
+<html>
+    <div class="form">
+        <form method = "POST" action = "">
+            {% csrf_token %}
+            <div class="form-items">
+                <div class="form-item">{{form.firstname}}</div>
+                <div class="form-item">{{form.lastname}}</div>
+                <div class="form-item">{{form.email}}</div>
+                <div class="form-item">{{form.password}}</div>
+            </div>
+            <div class="submit"><input type = "submit" value = "Register"></div>
+        </form>
+    </div>
+</html>

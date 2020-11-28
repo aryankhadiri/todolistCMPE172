@@ -1,0 +1,18 @@
+<head>
+    {% load static %}
+    <link href = "{% static '/css/base.css' %}" rel = "stylesheet" type = "text/css">
+</head>
+<div class="nav">
+    <ul class = "nav-items">
+        <div class = "left-nav">
+            <li><p>Welcome to your tudulist</p></li>
+        </div>
+        <div class="right-nav">
+            <li><a href = "/register" class= "register-button">Register</a></li>
+            <li><a class = "logout-button" href = "/logout">LogOut</a></li>
+        </div>
+        
+    </ul>
+</div>
+{% block content %}
+{% endblock %}

@@ -1,0 +1,31 @@
+.nav {
+    width:100%;
+    background-color: rgb(75, 119, 201);
+    margin:0;
+}
+.nav ul {
+    list-style: none;
+}
+.nav div{
+    display: inline-block;
+    vertical-align: top;
+    padding:2% 0 2% 0;
+}
+.nav .left-nav{
+    width:30%;
+    
+}
+.nav .left-nav p{
+    margin:0;
+}
+.nav .right-nav{
+    width: 69.6%;
+    
+}
+.nav ul li{
+    display: inline-block;
+}
+.nav .right-nav li{
+    float: right;
+    margin-right:5%;
+}
