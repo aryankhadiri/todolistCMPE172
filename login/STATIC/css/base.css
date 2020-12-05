@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
 .nav {
     width:100%;
     background-color: rgb(75, 119, 201);
@@ -15,9 +19,16 @@
     width:30%;
     
 }
-.nav .left-nav p{
+.nav .left-nav a{
     margin:0;
+    padding:0;
+    display: inline-block;
+    width: 100%;
 }
+.nav .left-nav li{
+    width: 100%;
+}
+
 .nav .right-nav{
     width: 69.6%;
     
@@ -28,4 +39,29 @@
 .nav .right-nav li{
     float: right;
     margin-right:5%;
+}
+.nav .right-nav li a{
+    text-decoration: none;
+    background-color:rgb(232, 232, 232);
+    padding:20% 25%;
+    border-radius: 5px;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif
+}
+.nav .right-nav li a:hover{
+    background-color:white;
+    cursor: pointer;
+}
+.nav .right-nav li a:visited{
+    color:black;
+}
+.tudu a{
+    font-family: fantasy;
+    font-size: 1.5rem;
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.tudu a:visited{
+    color:white;
 }

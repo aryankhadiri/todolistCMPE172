@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/1.11/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
-
+from django.utils import timezone
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '3hazm((_02gi1_la&rvlo&svcsr29tz0y*x*iu)x_ta*fp!gid'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = int(os.environ.get('DEBUG', default=1))
 
 ALLOWED_HOSTS = []
 
@@ -107,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Los_Angeles'
 
 USE_I18N = True
 
@@ -117,11 +117,14 @@ USE_TZ = True
 
 AUTH_USER_MODEL = 'login.User'
 
-STATIC_ROOT = os.path.join(BASE_DIR,'static')
+STATIC_ROOT =   os.path.join(os.path.dirname(BASE_DIR),"static_in_env", "static_root")
+
+LOGIN_URL = "/login"
 STATIC_URL = '/static/'
 STATICFILES_DIRS=[
-    os.path.join(BASE_DIR,'todolist/login/static'),
-    os.path.join(BASE_DIR,'todolist/todo/static'),
+    os.path.join(BASE_DIR,'static_in_pro', 'our_static'),
+    #os.path.join(BASE_DIR,'static_in_env'),
+
 ]
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/

@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(228, 228, 228);
+}
+
+.form{
+    background:rgb(255, 255, 255);
+    width:60%;
+    margin:10% auto;
+    padding:5%;
+    border-radius: 10px;
+}
+.form form{
+    width: 50%;
+    margin:auto;
+}
+.form-item input{
+    width: 100%;
+    margin-top:5%;
+    padding:3%;
+    text-align: center;
+    border:none;
+    border-bottom: 1px solid rgb(13, 96, 141);
+    color: rgb(13, 96, 141);
+}
+.form-item input::placeholder{
+    color: rgb(131, 183, 213);
+
+}
+.form-item input:focus{
+    outline:none;
+}
+.submit{
+    width: 50%;
+    margin:10% auto;
+}
+.submit input{
+    width: 100%;
+    padding:5% 10%;
+}

@@ -4,7 +4,6 @@ from django.shortcuts import render, redirect
 from .forms import LoginForm
 from django.contrib.auth import authenticate, login, logout
 from .models import User
-
 # Create your views here.
 def login_view(request):
     error = ''

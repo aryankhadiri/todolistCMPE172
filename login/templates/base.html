@@ -5,11 +5,13 @@
 <div class="nav">
     <ul class = "nav-items">
         <div class = "left-nav">
-            <li><p>Welcome to your tudulist</p></li>
+            <li class = "tudu"><a href = "/">Tudu List</a></li>
         </div>
         <div class="right-nav">
             <li><a href = "/register" class= "register-button">Register</a></li>
+            {% if request.user.is_authenticated %}
             <li><a class = "logout-button" href = "/logout">LogOut</a></li>
+            {% endif %}
         </div>
         
     </ul>

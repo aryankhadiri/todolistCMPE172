@@ -1,0 +1,129 @@
+.main-content{
+    margin:5%;
+    
+}
+.date{
+    border-bottom: 1px solid black;
+    padding:0 0 2% 0;
+}
+.tasks{
+    width:90%;
+    margin: 2% auto;
+
+}
+.task{
+    font-size: 1.2rem;
+    margin-bottom: 2%;
+    border-bottom: 1px solid rgb(129, 127, 127);
+    padding:2%;
+    font-family: sans-serif;
+}
+.task-description{
+    display: inline-block;
+    vertical-align: top;
+    width:80%;
+}
+.remove-check{
+    float: right;
+    padding:.5% 0 0 0;
+    width: 10%;
+}
+.task-done{
+    padding:.5% 0 0 0;
+    display: inline-block;
+    width: 9%;
+}
+.headers{
+    margin-bottom: 2%;
+    width: 100%;
+    font-size: 100%;
+}
+.headers h2{
+    display: inline-block;
+}
+#tasks-header{
+    width: 75%;
+}
+#remove-header{
+    margin-left:5%;
+}
+.newTasks{
+    margin-top:5%;
+    width : 100%;
+}
+.newTask{
+    margin-top:1%;
+    margin-bottom:1%;
+    padding:1%;
+}
+.newTask input[type = text]{
+    padding:1%;
+    width: 70%;
+    margin-right:10%;
+    border:none;
+    border-bottom: 1px solid gray;
+}
+.newTask input[type = text]:focus{
+    border-bottom: 1px solid blue;
+    outline:none;
+}
+
+
+#add-task-button{
+    background-color: transparent;
+    border:none;
+    color:blue;
+    font-size: 1.2rem;
+}
+#add-task-button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.delete-new-task{
+    margin-left: 10%;
+    background-color: rgb(255, 0, 0);
+    border:none;
+    border-radius: 2px;
+    color:white;
+    padding:.5% 1%;
+}
+.delete-new-task:hover{
+    opacity: 80%;
+    cursor: pointer;
+}   
+
+.submit-section{
+    width:50%;
+    margin:auto;
+    text-align: center;
+}
+.submit-section input, a{
+    padding:2% 3%;
+    border-radius: 5px;
+
+}
+.submit-section input:hover, .submit-section a:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+
+#cancel-button{
+    background-color: rgb(175, 175, 175);
+    border:none;
+    width:49%;
+    display: inline-block;
+
+}
+#cancel-button{
+    text-decoration: none;
+}
+#cancel-button:visited{
+    color:unset;
+}
+#save-button{
+    border:none;
+    background-color: rgb(121, 230, 121);
+    width:49%;
+}
+
+
